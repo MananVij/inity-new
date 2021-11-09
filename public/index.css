@@ -1,0 +1,60 @@
+body {
+    background-color: #1D1D20;
+}
+.navbar-brand {
+    color: #D4D4D8 !important;
+}
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0.5rem;
+    color: #D4D4D8 !important;
+    font-weight: 600;
+}
+
+h1 {
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 5.5rem;
+    margin: 0 0 1rem;
+}
+h3 {
+    color: #D4D4D8;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 2.8rem;
+}
+h4 {
+    color: #D4D4D8;
+    font-family: 'Inter', sans-serif;
+}
+
+.blocks {
+    background-color: #2E2E33;
+    /* margin: 0 1rem; */
+    text-align: center;
+    padding: 0;
+}
+.blocks h1, .blocks h4 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+.blocks h4 {
+    font-size: 1rem;
+}
+.hello {
+    padding: 2rem 0.25rem;
+}
+
+
+.email-div {
+    background-color: #2E2E33;
+    padding: 2rem 0;
+    margin: 5rem 0;
+}
+.email-div .row {
+    padding: 0 5rem;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
