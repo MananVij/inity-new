@@ -20,14 +20,14 @@ body {
     h1 {
         font-size: 56px;
     }
-    .intro {
-        
-    }
 }
 
 @media (min-width:961px) {
-    .main-div, .intro, .email-box, .second-div {
+    .intro, .email-box, .second-div {
         padding: 0 13rem 4rem
+    }
+    .main-div {
+        padding: 4rem 13rem;
     }
 }
 
