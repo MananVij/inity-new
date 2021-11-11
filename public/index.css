@@ -26,6 +26,9 @@ body {
     .intro, .email-box, .second-div, .third-div, footer {
         padding: 0 13rem 4rem
     }
+    .third-div {
+        padding-top: 4rem
+    }
     .main-div {
         padding: 4rem 13rem;
     }
