@@ -91,3 +91,11 @@ hr {
 footer {
     padding-bottom: 2rem;
 }
+.fab {
+    color: #3CB8B4;
+    display: inline;
+    margin-right: 1rem;
+}
+.fab:hover {
+    color: #4cc7c3
+}
