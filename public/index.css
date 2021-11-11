@@ -23,7 +23,7 @@ body {
 }
 
 @media (min-width:961px) {
-    .intro, .email-box, .second-div {
+    .intro, .email-box, .second-div, .third-div, footer {
         padding: 0 13rem 4rem
     }
     .main-div {
@@ -42,7 +42,7 @@ h3 {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 2.8rem;
 }
-h4 {
+h4, h5 {
     color: #D4D4D8;
     font-family: 'Inter', sans-serif;
 }
@@ -74,7 +74,7 @@ hr {
 .email-div {
     background-color: #2E2E33;
     padding: 2rem 0;
-    margin: 5rem 0;
+    margin: 5rem 0 0;
 }
 .email-div .row {
     padding: 0 5rem;
@@ -83,4 +83,11 @@ hr {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.footer-logo {
+    width: 3.5rem;
+}
+footer {
+    padding-bottom: 2rem;
 }
