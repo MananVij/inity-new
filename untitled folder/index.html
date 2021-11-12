@@ -47,7 +47,7 @@
     />
 
     <!-- Form CSS -->
-    <link rel="stylesheet" href="./public/index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./public/form.css" />
     <link rel="icon" type="image/png" href="/public/logo_web.png" />
   </head>
@@ -106,9 +106,9 @@
     <div class="container-fluid" style="width: fit-content;">
       <div class="intro">
         <div>
-          <div class="row" style="padding-top: 5rem">
+          <div class="row" style="padding-top: 11rem">
             <div class="col-lg-6 col-sm-12">
-              <h1>Finetune your Finances</h1>
+              <h1>Finetune your <b>Expenses</b></h1>
             </div>
             <div class="col-lg-6 col-sm-12"></div>
           </div>
@@ -190,26 +190,26 @@
 
       <div class="fourth-div">
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="box" style="background-image: linear-gradient(to right top, #3bb9b4, #40bfb8, #44c4bc, #49cac0, #4ed0c4); padding: 1rem;">
+          <div class="col-lg-3">
+            <div style="background-image: linear-gradient(to right top, #3bb9b4, #40bfb8, #44c4bc, #49cac0, #4ed0c4); padding: 1rem;">
               <h3>Simpler Sharing</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, placeat!</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="box" style="background-image: linear-gradient(to right top, #9f7bea, #a581ec, #ab87ef, #b08ef1, #b694f3); padding: 1rem;">
+          <div class="col-lg-3">
+            <div style="background-image: linear-gradient(to right top, #9f7bea, #a581ec, #ab87ef, #b08ef1, #b694f3); padding: 1rem;">
               <h3>Simpler Sharing</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, placeat!</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="box" style="background-image: linear-gradient(to right top, #677eea, #6c86ed, #728def, #7895f2, #7e9cf4); padding: 1rem;">
+          <div class="col-lg-3">
+            <div style="background-image: linear-gradient(to right top, #677eea, #6c86ed, #728def, #7895f2, #7e9cf4); padding: 1rem;">
               <h3>Simpler Sharing</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, placeat!</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="box" style="background-image: linear-gradient(to right top, #ec64a6, #ef6da9, #f176ac, #f37faf, #f587b2); padding: 1rem;">
+          <div class="col-lg-3">
+            <div style="background-image: linear-gradient(to right top, #ec64a6, #ef6da9, #f176ac, #f37faf, #f587b2); padding: 1rem;">
               <h3>Simpler Sharing</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, placeat!</p>
             </div>
@@ -308,12 +308,10 @@
               style="color: white; display: flex; justify-content: center"
             >
               <div style="display: flex; flex-direction: column">
-                <h2 style="margin: 0 0 1rem; font-weight: 600;">Follow</h2>
-                <div>
-                  <a href="#"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-                  <a class="" href="#"><i class="fab fa-facebook" style="font-size: 1.25rem;"></i></a>
-                  <a class="" href="#"><i class="fab twitter fa-twitter" style="font-size: 1.25rem;"></i></a>
-                </div>
+                <h2 style="margin: 0 0 1rem">Follow</h2>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a class="" href="#"><i class="fab fa-facebook"></i></a>
+                <a class="" href="#"><i class="fab twitter fa-twitter"></i></a>
               </div>
             </div>
             <div
@@ -330,7 +328,7 @@
       </footer>
     </div>
     
-    <!-- Bootstrap Script -->
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -346,25 +344,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
-    <!-- GSAP Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-
-    <script>
-
-
-      gsap.from(".box", {
-        scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
-        start: "top center",
-        x: -50,
-        opacity: 0,
-        duration: 1
-      });
-
-    </script>
-
-
-
   </body>
 </html>

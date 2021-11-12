@@ -37,7 +37,7 @@ body {
 h1 {
     color: white;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 6.22rem;
+    font-size: 6.2rem;
     margin: 0 0 1rem;
 }
 h3 {
@@ -73,13 +73,6 @@ hr {
     margin: 0;
 }
 
-.fourth-div h3{
-    color: white;
-}
-.box:hover {
-    transform: scale(1.01) !important;
-    transition-duration: 0.2s;
-}
 
 .email-div {
     background-color: #2E2E33;
@@ -94,8 +87,6 @@ hr {
     justify-content: center;
     flex-direction: column;
 }
-
-
 
 .footer-logo {
     width: 3.5rem;
