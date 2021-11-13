@@ -73,6 +73,10 @@ hr {
     margin: 0;
 }
 
+.third-div img {
+    width: 50%;
+}
+
 .fourth-div h3{
     color: white;
 }
