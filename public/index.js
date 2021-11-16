@@ -13,96 +13,6 @@ gsap.from("h1", {
     duration: 1.5
   });
 
-  //jb
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  //delete start
-  let bodyScrollBar = Scrollbar.init(document.body, {
-    damping: 0.1,
-    delegateTo: document,
-  });
-  ScrollTrigger.scrollerProxy(".scroller", {
-    scrollTop(value) {
-      if (arguments.length) {
-        bodyScrollBar.scrollTop = value;
-      }
-      return bodyScrollBar.scrollTop;
-    },
-  });
-  bodyScrollBar.addListener(ScrollTrigger.update);
-  gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
-  var images = gsap.utils.toArray('.panel:not(.purple)');
-  images.forEach((image, i) => {
-    
-    var tl = gsap.timeline({
-      
-      scrollTrigger: {
-        trigger: "section.black",
-        scroller: ".scroller",
-        start: () => "top -" + (window.innerHeight*(i+0.5)),
-        end: () => "+=" + window.innerHeight,
-        scrub: true,
-        toggleActions: "play none reverse none",
-        invalidateOnRefresh: true,     
-      }
-      
-    })
-    
-    tl
-    .to(image, { height: 0 })
-    ;
-    
-  });
-//delete end
-  
-  
-  
-  gsap.set(".explain-text", { zIndex: (i, target, targets) => targets.length - i });
-  
-  var texts = gsap.utils.toArray('.explain-text');
-  
-  texts.forEach((text, i) => {
-    
-    var tl = gsap.timeline({
-      
-      scrollTrigger: {
-        trigger: "section.black",
-        scroller: ".scroller",
-        start: () => "top -" + (window.innerHeight*i),
-        end: () => "+=" + window.innerHeight,
-        scrub: true,
-        toggleActions: "play none reverse none",
-        invalidateOnRefresh: true,     
-      }
-      
-    })
-    
-    tl
-    .to(text, { duration: 0.33, opacity: 1, y:"50%" })  
-    .to(text, { duration: 0.33, opacity: 0, y:"0%" }, 0.66)
-    ;
-    
-  });
-  
-  
-  
-  
-  
-  ScrollTrigger.create({
-  
-      trigger: "section.black",
-      scroller: ".scroller",
-      scrub: true,
-      markers: true,
-      pin: true,
-      start: () => "top top",
-      end: () => "+=" + ((images.length + 1) * window.innerHeight),
-      invalidateOnRefresh: true,
-  
-  });
-  
-  //jk
 
   gsap.from(".box", {
     scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
@@ -111,3 +21,82 @@ gsap.from("h1", {
     opacity: 0,
     duration: 1
   });
+
+
+
+  gsap.to(".explain-text1", {
+    scrollTrigger: {
+      trigger: ".explain-text1",
+      start: "top 0%",
+      end: "top -100%",
+      pin: ".features-div1",
+    }
+  })
+  gsap.to(".explain-text2", {
+    scrollTrigger: {
+      trigger: ".explain-text2",
+      start: "top 0%",
+      end: "top -100%",
+      pin: ".features-div2",
+    }
+  })
+  gsap.to(".explain-text3", {
+    scrollTrigger: {
+      trigger: ".explain-text3",
+      start: "top 0%",
+      end: "top -100%",
+      pin: ".features-div3",
+    }
+  })
+  gsap.to(".explain-text4", {
+    scrollTrigger: {
+      trigger: ".explain-text4",
+      start: "top 0%",
+      end: "top -100%",
+      pin: ".features-div4",
+    }
+  })
+
+
+  // gsap.to(".explain-text", {
+  //   scrollTrigger: {
+  //     trigger: ".explain-text",
+  //     start: "top 50%",
+  //     end: "top 0%",
+  //     markers: true,
+  //     pin: ".explain-img2",
+  //     markers: {
+  //       startColor: "yellow",
+  //       endColor: "white",
+  //       fontSize: "2rem",
+  //     },
+  //   }
+  // })  
+  // gsap.to(".explain-text", {
+  //   scrollTrigger: {
+  //     trigger: ".explain-text",
+  //     start: "top 50%",
+  //     end: "top 0%",
+  //     markers: true,
+  //     pin: ".explain-img3",
+  //     markers: {
+  //       startColor: "yellow",
+  //       endColor: "white",
+  //       fontSize: "2rem",
+  //     },
+  //   }
+  // })  
+  // gsap.to(".explain-text", {
+  //   scrollTrigger: {
+  //     trigger: ".explain-text",
+  //     start: "top 50%",
+  //     end: "top 0%",
+  //     markers: true,
+  //     pin: ".explain-img4",
+  //     markers: {
+  //       startColor: "yellow",
+  //       endColor: "white",
+  //       fontSize: "2rem",
+  //     },
+  //   }
+  // })
