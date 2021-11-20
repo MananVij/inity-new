@@ -28,32 +28,32 @@ gsap.from("h1", {
     scrollTrigger: {
       trigger: ".explain-text1",
       start: "top 0%",
-      end: "top -100%",
-      pin: ".features-div1",
+      end: "top -140%",
+      pin: ".explain-img1",
     }
   })
   gsap.to(".explain-text2", {
     scrollTrigger: {
       trigger: ".explain-text2",
       start: "top 0%",
-      end: "top -100%",
-      pin: ".features-div2",
+      end: "top -140%",
+      pin: ".explain-img2",
     }
   })
   gsap.to(".explain-text3", {
     scrollTrigger: {
       trigger: ".explain-text3",
       start: "top 0%",
-      end: "top -100%",
-      pin: ".features-div3",
+      end: "top -140%",
+      pin: ".explain-img3",
     }
   })
   gsap.to(".explain-text4", {
     scrollTrigger: {
       trigger: ".explain-text4",
       start: "top 0%",
-      end: "top -100%",
-      pin: ".features-div4",
+      end: "top -140%",
+      pin: ".explain-img4",
     }
   })
 
@@ -100,3 +100,6 @@ gsap.from("h1", {
   //     },
   //   }
   // })
+
+
+
