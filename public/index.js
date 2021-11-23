@@ -13,7 +13,6 @@ gsap.from("h1", {
     duration: 1.5
   });
 
-
   gsap.from(".box", {
     scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
     start: "top center",
@@ -21,8 +20,6 @@ gsap.from("h1", {
     opacity: 0,
     duration: 1
   });
-
-
 
   gsap.to(".explain-text1", {
     scrollTrigger: {
@@ -56,50 +53,3 @@ gsap.from("h1", {
       pin: ".explain-img4",
     }
   })
-
-
-  // gsap.to(".explain-text", {
-  //   scrollTrigger: {
-  //     trigger: ".explain-text",
-  //     start: "top 50%",
-  //     end: "top 0%",
-  //     markers: true,
-  //     pin: ".explain-img2",
-  //     markers: {
-  //       startColor: "yellow",
-  //       endColor: "white",
-  //       fontSize: "2rem",
-  //     },
-  //   }
-  // })  
-  // gsap.to(".explain-text", {
-  //   scrollTrigger: {
-  //     trigger: ".explain-text",
-  //     start: "top 50%",
-  //     end: "top 0%",
-  //     markers: true,
-  //     pin: ".explain-img3",
-  //     markers: {
-  //       startColor: "yellow",
-  //       endColor: "white",
-  //       fontSize: "2rem",
-  //     },
-  //   }
-  // })  
-  // gsap.to(".explain-text", {
-  //   scrollTrigger: {
-  //     trigger: ".explain-text",
-  //     start: "top 50%",
-  //     end: "top 0%",
-  //     markers: true,
-  //     pin: ".explain-img4",
-  //     markers: {
-  //       startColor: "yellow",
-  //       endColor: "white",
-  //       fontSize: "2rem",
-  //     },
-  //   }
-  // })
-
-
-

@@ -1,7 +1,7 @@
 body {
-    background-color: #1D1D20;
+    background-color: #ffffff;
 }
-.navbar-brand {
+/* .navbar-brand {
     color: white !important;
 }
 .nav-link {
@@ -9,13 +9,13 @@ body {
     margin-left: 0.5rem;
     color: #D4D4D8 !important;
     font-weight: 600;
-}
-.nav-link:hover{
-    color: white !important;
+}*/
+/* .nav-link:hover{
+    color: #5271ff !important;
 }
 .active a{
-    color: white !important;
-}
+    color: #5271ff !important; 
+} */
 a:hover {
     text-decoration: none;
 }
@@ -35,34 +35,35 @@ a:hover {
 
 @media (min-width:961px) {
     .intro, .email-box, .second-div, .third-div, .fourth-div, footer {
-        padding: 0 13rem 4rem
+        padding: 0 7rem 4rem
     }
     .third-div {
         padding-top: 4rem
     }
     .main-div {
-        padding: 4rem 13rem 0;
+        padding: 4rem 7rem 0;
     }
 }
 
 h1 {
-    color: white;
+    color: black;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 6.22rem;
     margin: 0 0 1rem;
+    text-align: left;
 }
 h3 {
-    color: #D4D4D8;
+    color: black;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 2.8rem;
 }
 h4, h5 {
-    color: #D4D4D8;
+    color: black;
     font-family: 'Inter', sans-serif;
 }
 
 .blocks {
-    background-color: #2E2E33;
+    /* background-color: #2E2E33; */
     /* margin: 0 1rem; */
     text-align: center;
     padding: 0;
@@ -133,3 +134,7 @@ footer {
     color: #4cc7c3
 }
 
+
+.explain-text1 {
+    opacity: 0;
+}
