@@ -21,47 +21,112 @@ gsap.from("h1", {
     duration: 1
   });
 
-  gsap.to(".explain-text1", {
-    scrollTrigger: {
-      trigger: ".explain-text1",
-      start: "top 0%",
-      end: "top -140%",
-      pin: ".explain-img1",
-    }
-  })
-  gsap.to(".explain-text2", {
-    scrollTrigger: {
-      trigger: ".explain-text2",
-      start: "top 0%",
-      end: "top -140%",
-      pin: ".explain-img2",
-    }
-  })
-  gsap.to(".explain-text3", {
-    scrollTrigger: {
-      trigger: ".explain-text3",
-      start: "top 0%",
-      end: "top -140%",
-      pin: ".explain-img3",
-    }
-  })
-  gsap.to(".explain-text4", {
-    scrollTrigger: {
-      trigger: ".explain-text4",
-      start: "top 0%",
-      end: "top -140%",
-      pin: ".explain-img4",
-    }
-  })
+  // ellipse animation
+  gsap.from(".ellipse1", {
+    scrollTrigger: ".ellipse1", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    x: 50,
+    opacity: 0,
+    duration: 1
+  });
+  gsap.from(".ellipse2", {
+    scrollTrigger: ".ellipse2", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    x: 50,
+    opacity: 0,
+    duration: 1
+  });
+
+  //ellipse text animation 
+  gsap.from(".explain-txt1 h3", {
+    scrollTrigger: ".explain-txt1 h3", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +60,
+    opacity: 0,
+    duration: 1
+  });
+  gsap.from(".explain-txt2 h5", {
+    scrollTrigger: ".explain-txt2 h5", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +60,
+    opacity: 0,
+    duration: 0.8
+  });
+
+  // third div animation
+  gsap.from(".third-div img", {
+    scrollTrigger: ".third-div img", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +60,
+    opacity: 0,
+    duration: 1
+  });
+  gsap.from(".third-div h3", {
+    scrollTrigger: ".third-div h3", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +20,
+    opacity: 0,
+    duration: 0.8
+  });
+  gsap.from(".third-div h5", {
+    scrollTrigger: ".third-div h5", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +20,
+    opacity: 0,
+    duration: 0.8
+  });
+  gsap.from(".third-row1", {
+    scrollTrigger: ".third-row1", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +80,
+    opacity: 0,
+    duration: 1
+  });
+  gsap.from(".third-row2", {
+    scrollTrigger: ".third-row2", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +80,
+    opacity: 0,
+    duration: 1
+  });
 
 
-  // $( window ).on('scroll', function(){
+  // fifth div animation
+  gsap.from(".fifth-div img", {
+    scrollTrigger: ".fifth-div img", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +60,
+    opacity: 0,
+    duration: 1
+  });
+  gsap.from(".fifth-div h3", {
+    scrollTrigger: ".fifth-div h3", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +20,
+    opacity: 0,
+    duration: 0.8
+  });
+  gsap.from(".fifth-div h5", {
+    scrollTrigger: ".fifth-div h5", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +20,
+    opacity: 0,
+    duration: 0.8
+  });
+  gsap.from(".c", {
+    scrollTrigger: ".fifth-row1", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +80,
+    opacity: 0,
+    duration: 1
+  });
+  gsap.from(".fifth-row2", {
+    scrollTrigger: ".fifth-row2", // start the animation when ".box" enters the viewport (once)
+    start: "top center",
+    y: +80,
+    opacity: 0,
+    duration: 1
+  });
 
-  //   var scrollTop = $(this).scrollTop();
-  //   console.log(this)
-  //   $( '.triangle' ).css({
-  //     transform: 'translateX('+  ( 0.18 * scrollTop ) +'px)',
-  //     // transform: 'translateY('+  ( 0.01 * scrollTop ) +'px)',
-  //   });
 
-  // });
+
