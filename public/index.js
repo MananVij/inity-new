@@ -55,13 +55,13 @@ gsap.from("h1", {
   })
 
 
-  $( window ).on('scroll', function(){
+  // $( window ).on('scroll', function(){
 
-    var scrollTop = $(this).scrollTop();
-    console.log(this)
-    $( '.triangle' ).css({
-      transform: 'translateX('+  ( 0.18 * scrollTop ) +'px)',
-      transform: 'translateY('+  ( 0.18 * scrollTop ) +'px)',
-    });
+  //   var scrollTop = $(this).scrollTop();
+  //   console.log(this)
+  //   $( '.triangle' ).css({
+  //     transform: 'translateX('+  ( 0.18 * scrollTop ) +'px)',
+  //     // transform: 'translateY('+  ( 0.01 * scrollTop ) +'px)',
+  //   });
 
-  });
+  // });

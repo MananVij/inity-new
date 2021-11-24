@@ -43,6 +43,13 @@ a:hover {
     .main-div {
         padding: 4rem 7rem 0;
     }
+    .explain-txt {
+        display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                top: 8vh;
+    }
 }
 
 h1 {
@@ -62,8 +69,11 @@ h4, h5 {
     font-family: 'Inter', sans-serif;
 }
 
-.third-div, .fourth-div, .fifth-div, .sixth-div {
-    padding-top: 5rem;
+.third-div, .fifth-div {
+    padding-top: 17rem;
+}
+.sixth-div {
+    padding-top: 5rem ;
 }
 
 .blocks {
@@ -110,7 +120,7 @@ hr {
 .email-div {
     background-color: #2E2E33;
     padding: 2rem 0;
-    margin: 5rem 0 0;
+    margin: 1rem 0 0;
 }
 .email-div .row {
     padding: 0 5rem;

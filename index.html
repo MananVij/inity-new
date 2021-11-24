@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width" />
     <title>Inity</title>
 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Bootstraap style CDN -->
     <link
       rel="stylesheet"
@@ -190,10 +193,7 @@
       <div class="second-div">
         <div class="row">
             <div class="col-lg-5 col-sm-12" style="display: flex;">
-                <div style="display: flex;
-                flex-direction: column;
-                justify-content: center;
-            ">
+                <div class="explain-txt">
                     <h3>Track Money Spent</h3>
                     <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, dolorem</h5>
                 </div>
@@ -201,9 +201,9 @@
 
             </div>
             <div class="col-lg-7 col-sm-12">
-                <div>
-                    <img src="./public/7.png" alt="">
-                    <img src="./public/Ellipse 7.png" style="width: 90%;" alt="">
+                <div style="background-image: url('./public/Ellipse\ 7.png'); background-size: cover;">
+                    <img src="./public/7.png" style="position: relative; left: 25vh; top: 25vh;" alt="">
+                    <!-- <img src="./public/Ellipse 7.png" style="width: 90%;" alt=""> -->
                 </div>
             </div>
         </div>
@@ -256,22 +256,21 @@
         <!-- fourth-div -->
         <div class="fourth-div">
           <div class="row">
+            <div class="col-lg-5 col-sm-12" style="display: flex;">
+                <div class="explain-txt">
+                    <h3>Track Money Spent</h3>
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, dolorem</h5>
+                </div>
+
+
+            </div>
             <div class="col-lg-7 col-sm-12">
-              <div>
-                  <img src="./public/7.png" alt="">
-                  <img src="./public/Ellipse 7.png" style="width: 90%;" alt="">
-              </div>
-          </div>
-              <div class="col-lg-5 col-sm-12" style="display: flex;">
-                  <div style="display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-              ">
-                      <h3>Investment Ideas</h3>
-                      <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, dolorem</h5>
-                  </div>
-              </div>
-          </div>
+                <div style="background-image: url('./public/Ellipse\ 7.png'); background-size: cover;">
+                    <img src="./public/7.png" style="position: relative; left: 25vh; top: 25vh;" alt="">
+                    <!-- <img src="./public/Ellipse 7.png" style="width: 90%;" alt=""> -->
+                </div>
+            </div>
+        </div>
         </div>
 
         <div class="fifth-div">
@@ -310,8 +309,8 @@
                 </div>
               </div>
           </div>
-          <div>
-            <img class="triangle" src="./public/tri_green.png" style="position: absolute; width: 5%; z-index: -1;" alt="">
+          <div data-aos = "fade-up-right">
+            <img              class="triangle" src="./public/tri_green.png" style="position: absolute; width: 5%; z-index: -1;" alt="">
           </div>
         </div>
       </div>
@@ -540,6 +539,10 @@
       </footer>
     </div>
 
+
+
+
+
     <!-- Bootstrap Script -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -570,4 +573,20 @@
       }
     })
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    offset: 100,
+    easing: 'ease',
+    duration: 750,
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+
+    // if once is true, mirror true wont work
+  });
+</script>
 </html>
