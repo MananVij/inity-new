@@ -30,6 +30,10 @@ a:hover {
     .tagline-img {
         padding-top: 0;
     }
+    .ellipse {
+        position: relative;
+        right: 45vw;
+    }
     
 }
 
