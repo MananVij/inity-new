@@ -30,14 +30,21 @@ a:hover {
     .tagline-img {
         padding-top: 0;
     }
-    .ellipse {
+    /* .ellipse {
         position: relative;
         right: 45vw;
-    }
+    } */
     
 }
+@media (max-width:480px){
+     .ellipse {
+        position: relative;
+        right: 45vw;
+    } 
+}
 
-@media (min-width:961px) {
+
+@media (min-width:1025px) {
     .intro, .email-box, .second-div, .sixth-div, footer {
         padding: 0 7rem 4rem
     }
