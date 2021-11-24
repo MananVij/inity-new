@@ -53,3 +53,15 @@ gsap.from("h1", {
       pin: ".explain-img4",
     }
   })
+
+
+  $( window ).on('scroll', function(){
+
+    var scrollTop = $(this).scrollTop();
+    console.log(this)
+    $( '.triangle' ).css({
+      transform: 'translateX('+  ( 0.18 * scrollTop ) +'px)',
+      transform: 'translateY('+  ( 0.18 * scrollTop ) +'px)',
+    });
+
+  });

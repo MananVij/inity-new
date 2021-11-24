@@ -34,10 +34,10 @@ a:hover {
 }
 
 @media (min-width:961px) {
-    .intro, .email-box, .second-div, .third-div, .fourth-div, footer {
+    .intro, .email-box, .second-div, .sixth-div, footer {
         padding: 0 7rem 4rem
     }
-    .third-div {
+    .second-div {
         padding-top: 4rem
     }
     .main-div {
@@ -60,6 +60,10 @@ h3 {
 h4, h5 {
     color: black;
     font-family: 'Inter', sans-serif;
+}
+
+.third-div, .fourth-div, .fifth-div, .sixth-div {
+    padding-top: 5rem;
 }
 
 .blocks {
@@ -85,7 +89,7 @@ hr {
     margin: 0;
 }
 
-.third-div img {
+.second-div img {
     width: 75%;
 }
 .features-div {
@@ -95,7 +99,7 @@ hr {
     font-size: 5rem;
 }
 
-.fourth-div h3{
+.sixth-div h3{
     color: white;
 }
 .box:hover {
