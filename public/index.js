@@ -129,4 +129,21 @@ gsap.from("h1", {
   });
 
 
+  function myFunction() {
+    var elmnt = document.querySelector(".fifth-div");
+    var y = elmnt.scrollHeight;
+    var x = elmnt.scrollWidth;
+    console.log(y,x)
+  }
 
+
+  $( window ).on('scroll', function(){
+
+    var scrollTop = $(this).scrollTop();
+    console.log(this, scrollTop)
+    $( '.triangle' ).css({
+      transform: 'translateX('+  ( 0.18 * scrollTop ) +'px)',
+      // transform: 'translateY('+  ( 0.01 * scrollTop ) +'px)',
+    });
+
+  });

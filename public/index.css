@@ -1,5 +1,6 @@
 body {
     background-color: #ffffff;
+    width: fit-content;
 }
 /* .navbar-brand {
     color: white !important;
@@ -19,6 +20,7 @@ body {
 a:hover {
     text-decoration: none;
 }
+
 @media (min-width:320px) {
     h1 {
         font-size: 56px;
@@ -29,37 +31,44 @@ a:hover {
     }
     .tagline-img {
         padding-top: 0;
-    }
-    /* .ellipse {
-        position: relative;
-        right: 45vw;
-    } */
-    
+    } 
+    /* ok */
 }
-@media (max-width:480px){
-     .ellipse {
+@media (max-width:762px){
+
+     .ellipse1, .ellipse2 {
         position: relative;
         right: 45vw;
     } 
 }
 
 
+
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 767px) {
+
+        }
+         
+        /* Media Query for Tablets Ipads portrait mode */
+        @media (min-width: 768px) and (max-width: 1024px){
+
+        }
+
+/* @media only screen and (max-width: 1025px) and (min-width: 900px)  {...} */
+
 @media (min-width:1025px) {
     .intro, .email-box, .second-div, .sixth-div, footer {
         padding: 0 7rem 4rem
-    }
-    .second-div {
-        padding-top: 4rem
     }
     .main-div {
         padding: 4rem 7rem 0;
     }
     .explain-txt1, .explain-txt2 {
         display: flex;
-                flex-direction: column;
-                justify-content: center;
-                position: relative;
-                top: 8vh;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: 8vh;
     }
 }
 
@@ -80,8 +89,11 @@ h4, h5 {
     font-family: 'Inter', sans-serif;
 }
 
+.second-div, .fourth-div {
+    padding-top: 7rem  
+}
 .third-div, .fifth-div {
-    padding-top: 17rem;
+    padding-top: 14rem;
 }
 .sixth-div {
     padding-top: 5rem ;
@@ -110,8 +122,8 @@ hr {
     margin: 0;
 }
 
-.second-div img {
-    width: 75%;
+.hello {
+    position: relative; left: 25vh; top: 10vh; width: 60vh;
 }
 .features-div {
     height: 100vh;
