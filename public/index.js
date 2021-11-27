@@ -129,21 +129,298 @@ gsap.from("h1", {
   });
 
 
-  function myFunction() {
-    var elmnt = document.querySelector(".fifth-div");
-    var y = elmnt.scrollHeight;
-    var x = elmnt.scrollWidth;
-    console.log(y,x)
+
+
+  // shape animation third div
+  gsap.to('.triangle1', {
+    duration: 500, 
+    x: -160, 
+    y: -160,
+    ease:'linear',
+    scrollTrigger:{
+       trigger:".third-div h3",
+       start:"top 10%",
+       scrub:true,
+       end:'1000% 10%',
+    }
+})
+gsap.to('.triangle-phone1', {
+  duration: 500, 
+  x: -160, 
+  y: -160,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".third-div h3",
+     start:"top 10%",
+     scrub:true,
+     end:'1000% 10%',
   }
+})
+gsap.to('.circle1', {
+  duration: 5000, 
+  y: -50,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".third-div h3",
+     start:"top 50%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.right-line1', {
+  duration: 5000, 
+  y: 70,
+  x: 70,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".third-div h3",
+     start:"top 50%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+
+gsap.to('.left-line2', {
+  duration: 50, 
+  y: -200,
+  x: 200,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 90%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.triangle2', {
+  duration: 50, 
+  y: 200,
+  x: 200,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 50%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.semicircle2', {
+  duration: 50, 
+  y: 200,
+  x: -200,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 40%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.right-line2', {
+  duration: 50, 
+  y: 100,
+  x: -100,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 40%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.triangle2-bottom', {
+  duration: 50, 
+  y: 10,
+  x: -10,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top -20%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.right-line2-bottom', {
+  duration: 50, 
+  y: -150,
+  x: 150,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top -20%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.circle2', {
+  duration: 2000, 
+  y: -500,
+  // x: 200,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 70%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+
+gsap.to('.left-line4', {
+  duration: 50, 
+  y: -200,
+  x: 200,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 90%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.triangle4', {
+  duration: 50, 
+  y: 200,
+  x: 200,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 50%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.semicircle4', {
+  duration: 50, 
+  y: 200,
+  x: -200,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 40%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.right-line4', {
+  duration: 50, 
+  y: 100,
+  x: -100,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 40%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.triangle4-bottom', {
+  duration: 50, 
+  y: 10,
+  x: -10,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top -20%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.right-line4-bottom', {
+  duration: 50, 
+  y: -150,
+  x: 150,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top -20%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.circle4', {
+  duration: 2000, 
+  y: -500,
+  // x: 200,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fourth-div h3",
+     start:"top 70%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
 
 
-  $( window ).on('scroll', function(){
 
-    var scrollTop = $(this).scrollTop();
-    console.log(this, scrollTop)
-    $( '.triangle' ).css({
-      transform: 'translateX('+  ( 0.18 * scrollTop ) +'px)',
-      // transform: 'translateY('+  ( 0.01 * scrollTop ) +'px)',
-    });
 
-  });
+
+  // shape animation fifth div
+  gsap.to('.triangle', {
+    duration: 500, 
+    x: -160, 
+    y: -160,
+    ease:'linear',
+    scrollTrigger:{
+       trigger:".fifth-div h3",
+       start:"top 10%",
+       scrub:true,
+       end:'1000% 10%',
+    }
+})
+gsap.to('.triangle-phone', {
+  duration: 500, 
+  x: -160, 
+  y: -160,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fifth-div h3",
+     start:"top 10%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.circle', {
+  duration: 5000, 
+  y: -50,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fifth-div h3",
+     start:"top 50%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+gsap.to('.right-line', {
+  duration: 5000, 
+  y: 70,
+  x: 70,
+  ease:'linear',
+  scrollTrigger:{
+     trigger:".fifth-div h3",
+     start:"top 50%",
+     scrub:true,
+     end:'1000% 10%',
+  }
+})
+
+
+
+
+// color card
+var x = document.querySelectorAll('.color1')
+for(var i=0; i<x.length;  i++) {
+    x[i].onclick = function () {
+        var y = document.querySelector('.color3')
+        y.classList.remove('color3')
+        this.classList.add('color3')
+    }
+}
+
+var z = document.querySelectorAll('.color2')
+for(var w=0; w<z.length;  w++) {
+    z[w].onclick = function () {
+        var p = document.querySelector('.color4')
+        p.classList.remove('color4')
+        this.classList.add('color4')
+    }
+}

@@ -17,6 +17,17 @@ body {
 .active a{
     color: #5271ff !important; 
 } */
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+.main-div, .intro {
+    background-color: #78D970;
+    /* background-image: linear-gradient(to right, #78d970, #7ade7a, #7be385, #7ee88f, #80ed99); */
+}
+
+
 a:hover {
     text-decoration: none;
 }
@@ -44,31 +55,15 @@ a:hover {
 
 
 
-        /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {
-
-        }
-         
-        /* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px){
-
-        }
-
-/* @media only screen and (max-width: 1025px) and (min-width: 900px)  {...} */
-
 @media (min-width:1025px) {
-    .intro, .email-box, .second-div, .sixth-div, footer {
-        padding: 0 7rem 4rem
+    .intro, .email-box, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, footer {
+        padding: 0 7rem 0
     }
     .main-div {
-        padding: 4rem 7rem 0;
+        padding: 2rem 7rem 0;
     }
     .explain-txt1, .explain-txt2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        top: 8vh;
+       text-align: center;
     }
 }
 
@@ -84,34 +79,34 @@ h3 {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 2.8rem;
 }
-h4, h5 {
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+h5 {
     color: black;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.second-div, .fourth-div {
+.third-div, .fifth-div{
+    background-color: #F7F7F7;
+    padding-bottom: 5rem;
+}
+
+.third-div, .fourth-div, .fifth-div {
     padding-top: 7rem  
 }
-.third-div, .fifth-div {
-    padding-top: 14rem;
+.second-div {
+    position: relative;
+    top: -2rem;
 }
 .sixth-div {
     padding-top: 5rem ;
 }
 
-.blocks {
-    /* background-color: #2E2E33; */
-    /* margin: 0 1rem; */
-    text-align: center;
-    padding: 0;
-}
-.blocks h1, .blocks h4 {
-    font-size: 2.8rem;
-    margin: 0;
-}
-.blocks h4 {
-    font-size: 1rem;
-}
 .hello {
     padding: 2rem 0.25rem;
 }
@@ -123,18 +118,16 @@ hr {
 }
 
 .hello {
-    position: relative; left: 25vh; top: 10vh; width: 60vh;
-}
-.features-div {
-    height: 100vh;
-}
-.features-div h3{
-    font-size: 5rem;
+    width: 32rem;
 }
 
+.second-div h3 {
+    padding-bottom: 0.5rem;
+}
 .sixth-div h3{
     color: white;
 }
+
 .box:hover {
     transform: scale(1.01) !important;
     transition-duration: 0.2s;
@@ -171,7 +164,7 @@ footer {
     color: #4cc7c3
 }
 
-
-.explain-text1 {
-    opacity: 0;
+.color3, .color4 {
+    background-image: linear-gradient(to right bottom, #5c7aea, #00a1fe, #00bce3, #00cfaa, #78d970);
 }
+
