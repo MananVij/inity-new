@@ -27,7 +27,6 @@ body {
     /* background-image: linear-gradient(to right, #78d970, #7ade7a, #7be385, #7ee88f, #80ed99); */
 }
 
-
 a:hover {
     text-decoration: none;
 }
@@ -47,10 +46,18 @@ a:hover {
 }
 @media (max-width:762px){
 
-     .ellipse1, .ellipse2 {
-        position: relative;
-        right: 45vw;
-    } 
+    h1, h2, h3, h4, h5, p {
+        text-align: center;
+    }
+    .shapes {
+        display: none;
+    }
+    
+}
+@media (min-width:762px) {
+    h1 {
+        text-align: left;
+    }
 }
 
 
@@ -72,7 +79,6 @@ h1 {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 6.22rem;
     margin: 0 0 1rem;
-    text-align: left;
 }
 h3 {
     color: black;
@@ -104,7 +110,7 @@ p {
     top: -2rem;
 }
 .sixth-div {
-    padding-top: 5rem ;
+    padding-top: 5rem;
 }
 
 .hello {
