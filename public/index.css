@@ -33,7 +33,7 @@ a:hover {
 
 @media (min-width:320px) {
     h1 {
-        font-size: 56px;
+        /* font-size: 56px; */
         text-align: center;
     }
     .tagline-div {
@@ -63,7 +63,7 @@ a:hover {
 
 
 @media (min-width:1025px) {
-    .intro, .email-box, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, footer {
+    .intro, .email-box, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, .seventh-div, .eight-div, .ninth-div, footer {
         padding: 0 7rem 0
     }
     .main-div {
@@ -77,13 +77,18 @@ a:hover {
 h1 {
     color: black;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 6.22rem;
+    /* font-size: 4.22rem; */
+    font-weight: 800;
     margin: 0 0 1rem;
+}
+h2 {
+    /* font-size: 3.6rem; */
+    font-weight: 800;
 }
 h3 {
     color: black;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 2.8rem;
+    /* font-size: 2rem; */
 }
 h4 {
     font-family: 'Montserrat', sans-serif;
@@ -91,7 +96,7 @@ h4 {
 h5 {
     color: black;
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 p {
     font-family: 'Open Sans', sans-serif;
