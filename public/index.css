@@ -63,7 +63,7 @@ a:hover {
 
 
 @media (min-width:1025px) {
-    .intro, .email-box, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, .seventh-div, .eight-div, .ninth-div, footer {
+    .intro, .email-div, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, .seventh-div, .eight-div, .ninth-div, footer {
         padding: 0 7rem 0
     }
     .main-div {
