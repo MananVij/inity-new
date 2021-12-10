@@ -447,8 +447,10 @@ ScrollTrigger.matchMedia({
         // offset = offset + height / 1;
         if (st >= 2.590561 * height) {
           $(this).css({ opacity: 0 });
+          document.querySelector('.second-div h5').innerHTML = "Inity has a wide range of Avatars to choose from, and all the suggestions will be tailored accordingly. "
         } else {
           $(this).css({ opacity: 1 });
+          document.querySelector('.second-div h5').innerHTML = "You are different and so are your needs. We understand!"
         }
       });
     });
@@ -459,24 +461,10 @@ ScrollTrigger.matchMedia({
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
         // offset = offset + height / 1;
-        if (st >= 3.61 * height || st <= 0.988 * offset) {
+        if ( st <= 0.988 * offset) {
           $(this).css({ opacity: 0 });
         } else {
           $(this).css({ opacity: 1 });
-        }
-      });
-    });
-    var fade3 = $(".txt3");
-    $(window).on("scroll", function () {
-      var st = $(this).scrollTop();
-      fade3.each(function () {
-        const offset = $(this).offset().top;
-        var height = $(this).outerHeight();
-        // offset = offset + height / 1;
-        if (st >= 0.995 * offset) {
-          $(this).css({ opacity: 1 });
-        } else {
-          $(this).css({ opacity: 0 });
         }
       });
     });
@@ -500,23 +488,13 @@ ScrollTrigger.matchMedia({
         toggleActions: "play reverse play reverse",
       },
     });
-    let t3 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".txt3",
-        pin: true,
-        start: "top 10",
-        end: "+=650",
-        scrub: true,
-        toggleActions: "play reverse play reverse",
-      },
-    });
 
     let t4 = gsap.timeline({
       scrollTrigger: {
         trigger: ".heading2-div",
         pin: true,
         start: "top center -10",
-        end: "+=1970",
+        end: "+=1320",
         scrub: true,
         // markers: true
       },
@@ -530,10 +508,14 @@ ScrollTrigger.matchMedia({
       fade4.each(function () {
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
-        if (st >= 6.8203 * height) {
+        if (st >= 5.828 * height) {
           $(this).css({ opacity: 0 });
+          document.querySelector('.third-div h2').innerHTML = "Link your Investment Portfolios and Subscriptions."
+          document.querySelector('.third-div h5').innerHTML = ""
         } else {
           $(this).css({ opacity: 1 });
+          document.querySelector('.third-div h2').innerHTML = "Link your Cards and Banks."
+          document.querySelector('.third-div h5').innerHTML = ""
         }
       });
     });
@@ -543,10 +525,12 @@ ScrollTrigger.matchMedia({
       fade5.each(function () {
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
-        if (st >= 7.82 * height || st <= 0.997 * offset) {
+        if (st >= 6.82039 * height || st <= 0.997 * offset) {
           $(this).css({ opacity: 0 });
+          document.querySelector('.third-div h5').innerHTML = "We keep your information secure away from hackers."
         } else {
           $(this).css({ opacity: 1 });
+          document.querySelector('.third-div h5').innerHTML = ""
         }
       });
     });
@@ -614,12 +598,12 @@ ScrollTrigger.matchMedia({
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
         // if (st >= 11.13089 * height) {
-        if (st >= 11.11872 * height) {
+        if (st >= 10.12024 * height) {
           $(this).css({ opacity: 0 });
+          document.querySelector('.h5-1').innerHTML = "Education?"
         } else {
           $(this).css({ opacity: 1 });
         }
-        // console.log(st, height ,offset)
       });
     });
     var fade8 = $(".txt8");
@@ -628,10 +612,11 @@ ScrollTrigger.matchMedia({
       fade8.each(function () {
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
-        if (st >= 12.11 * height || st <= 0.9985 * offset) {
+        if (st >= 11.111 * height || st <= 0.998442 * offset) {
           $(this).css({ opacity: 0 });
         } else {
           $(this).css({ opacity: 1 });
+          document.querySelector('.h5-1').innerHTML = "Marriage?"
         }
       });
     });
@@ -698,10 +683,12 @@ ScrollTrigger.matchMedia({
       fade10.each(function () {
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
-        if (st >= 15.275 * height) {
+        if (st >= 14.283105 * height) {
           $(this).css({ opacity: 0 });
+          document.querySelector('.heading5-2').innerHTML = "Want to invest in high risk stocks?"
         } else {
           $(this).css({ opacity: 1 });
+          document.querySelector('.heading5-2').innerHTML = "Want to invest in low risk stocks?"
         }
       });
     });
@@ -711,11 +698,13 @@ ScrollTrigger.matchMedia({
       fade11.each(function () {
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
-        if (st >= 0.997 * offset) {
+        if (st >= 0.99847 * offset) {
           $(this).css({ opacity: 1 });
         } else {
           $(this).css({ opacity: 0 });
         }
+        console.log(st, height ,offset)
+
       });
     });
 
