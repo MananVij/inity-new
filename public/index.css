@@ -58,9 +58,6 @@ a:hover {
         /* font-size: 56px; */
         text-align: left;
     }
-    /* .empty-div {
-        display: none;
-    }  */
     .intro {
         padding: 0 3rem;
     }
@@ -72,10 +69,17 @@ a:hover {
     }
     .tagline-img {
         padding-top: 0;
+    }
+    .eight-div, .email-box {
+        padding: 5rem;
     }  
+    .email-div {
+        padding: 1rem;
+        margin: 1rem 0 0;
+    } 
     .empty-div {
         display: none;
-    } 
+    }
 }
 /* @media (min-width:762px){
 
@@ -96,11 +100,17 @@ a:hover {
 
 
 @media (min-width:1024px) {
-    .intro, .email-div, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, .seventh-div, .eight-div, .ninth-div, footer {
+    .intro, .email-div, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, .seventh-div, .ninth-div, footer {
         padding: 0 7rem 0
+    }
+    .eight-div, .email-box {
+        padding: 10rem;
     }
     .main-div {
         padding: 2rem 7rem 0;
+    }
+    .email-div {
+        margin: 3rem 7rem
     }
     .explain-txt1, .explain-txt2 {
        text-align: center;
