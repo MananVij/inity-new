@@ -31,10 +31,19 @@ a:hover {
     text-decoration: none;
 }
 
-@media (min-width:320px) {
+/* @media (min-width:320px) {
     h1 {
-        /* font-size: 56px; */
-        text-align: center;
+        /* font-size: 56px; 
+        text-align: left;
+    }
+    /* .empty-div {
+        display: none;
+    }  */
+    .intro {
+        padding: 0 3rem;
+    }
+    .heading {
+        padding: 0 1rem;
     }
     .tagline-div {
         height: 90vh;
@@ -42,27 +51,51 @@ a:hover {
     .tagline-img {
         padding-top: 0;
     } 
-    /* ok */
-}
-@media (max-width:762px){
-
+    /* ok 
+} */
+@media (max-width:1024px) {
     h1, h2, h3, h4, h5, p {
-        text-align: center;
-    }
-    .shapes {
-        display: none;
-    }
-    
-}
-@media (min-width:762px) {
-    h1 {
+        /* font-size: 56px; */
         text-align: left;
     }
+    /* .empty-div {
+        display: none;
+    }  */
+    .intro {
+        padding: 0 3rem;
+    }
+    .heading {
+        padding: 0 1rem;
+    }
+    .tagline-div {
+        height: 90vh;
+    }
+    .tagline-img {
+        padding-top: 0;
+    }  
+    .empty-div {
+        display: none;
+    } 
 }
+/* @media (min-width:762px){
+
+    h1, h2, h3, h4, h5, p {
+        text-align: left;
+    }
+    .intro {
+        padding: 0 3rem;
+    }
+    .heading {
+        padding: 0 1rem;
+    }
+    /* .empty-div {
+        display: none;
+    } 
+} */
 
 
 
-@media (min-width:1025px) {
+@media (min-width:1024px) {
     .intro, .email-div, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, .seventh-div, .eight-div, .ninth-div, footer {
         padding: 0 7rem 0
     }
@@ -93,7 +126,7 @@ h1 {
     font-weight: 800;
 }
 .heading h5 {
-    font-size: 1.5remrem;
+    font-size: 1.5rem;
 }
 h3 {
     color: black;

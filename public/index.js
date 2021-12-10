@@ -1,6 +1,25 @@
+function myFunction(x) {
+  if (x.matches) {
+    // If media query matches
+    const elements = document.querySelectorAll(".hello-there");
+    const rows = document.querySelectorAll(".row-there");
+    const elementCount = elements.length;
+    for (var i = 0; i < elementCount; i++) {
+      elements[i].style.display = "flex";
+      elements[i].style.flexDirection = "column-reverse";
+      rows[i].style.display = "contents";
+    }
+  } else {
+    console.log(document.querySelector(".row-there").style.display);
+  }
+}
+
+var x = window.matchMedia("(max-width: 1024px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
+
 ScrollTrigger.matchMedia({
   "(min-width: 1024px)": function () {
-    
     // animations start
     gsap.from("h1", {
       scrollTrigger: "h1", // start the animation when ".box" enters the viewport (once)
@@ -426,7 +445,7 @@ ScrollTrigger.matchMedia({
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
         // offset = offset + height / 1;
-        if (st >= 2.6 * height) {
+        if (st >= 2.590561 * height) {
           $(this).css({ opacity: 0 });
         } else {
           $(this).css({ opacity: 1 });
@@ -511,7 +530,7 @@ ScrollTrigger.matchMedia({
       fade4.each(function () {
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
-        if (st >= 6.85 * height) {
+        if (st >= 6.8203 * height) {
           $(this).css({ opacity: 0 });
         } else {
           $(this).css({ opacity: 1 });
@@ -594,11 +613,13 @@ ScrollTrigger.matchMedia({
       fade7.each(function () {
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
-        if (st >= 11.103 * height) {
+        // if (st >= 11.13089 * height) {
+        if (st >= 11.11872 * height) {
           $(this).css({ opacity: 0 });
         } else {
           $(this).css({ opacity: 1 });
         }
+        // console.log(st, height ,offset)
       });
     });
     var fade8 = $(".txt8");
@@ -607,7 +628,7 @@ ScrollTrigger.matchMedia({
       fade8.each(function () {
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
-        if (st >= 12.11 * height || st <= 0.997 * offset) {
+        if (st >= 12.11 * height || st <= 0.9985 * offset) {
           $(this).css({ opacity: 0 });
         } else {
           $(this).css({ opacity: 1 });
