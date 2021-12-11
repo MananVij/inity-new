@@ -687,10 +687,13 @@ ScrollTrigger.matchMedia({
         var height = $(this).outerHeight();
         if (st >= 14.283105 * height) {
           $(this).css({ opacity: 0 });
-          document.querySelector('.heading5-2').innerHTML = "Want to invest in high risk stocks?"
+          document.querySelector('.heading5-1').innerHTML = "Want to invest in high risk stocks?"
+          document.querySelector('.heading5-2').innerHTML = "Tell us your preferences and we will give you a personalized investment plan created by experts."
+           
         } else {
           $(this).css({ opacity: 1 });
-          document.querySelector('.heading5-2').innerHTML = "Want to invest in low risk stocks?"
+          document.querySelector('.heading5-1').innerHTML = "Want to invest in low risk stocks?"
+          document.querySelector('.heading5-2').innerHTML = ""
         }
       });
     });
@@ -742,3 +745,28 @@ ScrollTrigger.matchMedia({
     });
   },
 });
+
+
+
+var countDownDate = new Date("Dec 27, 2021 15:37:25").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+    
+  // Time calculations for days
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    
+  if(days == 1) {
+    document.querySelector(".timer").innerHTML = "Closing Soon <br>" + days + " day left!";
+  } 
+  else if (distance < 0) {
+    clearInterval(x);
+    document.querySelector(".timer").innerHTML = "EXPIRED";
+  }
+  else {
+    document.querySelector(".timer").innerHTML = "Closing Soon <br>" + days + " days left!";
+
+  }
+}, 1000);
+
+
