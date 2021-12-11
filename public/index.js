@@ -485,7 +485,7 @@ var x = setInterval(function() {
 
 
 const form = document.querySelector("form");
-const url = 'https://inityapp.herokuapp.com/';
+const url = 'https://inity-backend.herokuapp.com/';
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
