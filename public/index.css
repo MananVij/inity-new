@@ -116,7 +116,7 @@ a:hover {
         padding: 2rem 7rem 0;
     }
     .email-div {
-        margin: 3rem 7rem
+        margin: 2rem 7rem 0 !important;
     }
     .explain-txt1, .explain-txt2 {
        text-align: center;
