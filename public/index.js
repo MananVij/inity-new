@@ -771,7 +771,7 @@ var x = setInterval(function() {
 
 
 const form = document.querySelector("form");
-const url = 'http://localhost:3000/';
+const url = 'https://inityapp.herokuapp.com/';
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
