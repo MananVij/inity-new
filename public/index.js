@@ -10,7 +10,7 @@ function myFunction(x) {
       rows[i].style.display = "contents";
     }
   } else {
-    console.log(document.querySelector(".row-there").style.display);
+    // console.log(document.querySelector(".row-there").style.display);
   }
 }
 
@@ -482,7 +482,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt2",
         pin: true,
-        start: "top 10",
+        start: "top top",
         end: "+=650",
         scrub: true,
         toggleActions: "play reverse play reverse",
@@ -493,7 +493,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".heading2-div",
         pin: true,
-        start: "top center -10",
+        start: "top 40%",
         end: "+=1320",
         scrub: true,
         // markers: true
@@ -561,7 +561,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt5",
         pin: true,
-        start: "top 10",
+        start: "top top",
         end: "+=650",
         scrub: true,
         toggleActions: "play reverse play reverse",
@@ -571,7 +571,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt6",
         pin: true,
-        start: "top 10",
+        start: "top top",
         end: "+=650",
         scrub: true,
         toggleActions: "play reverse play reverse",
@@ -582,7 +582,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".heading3-div",
         pin: true,
-        start: "top center -10",
+        start: "top 32%",
         end: "+=1970",
         scrub: true,
         // markers: true
@@ -647,7 +647,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt8",
         pin: true,
-        start: "top 10",
+        start: "top top",
         end: "+=650",
         scrub: true,
         toggleActions: "play reverse play reverse",
@@ -657,7 +657,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt9",
         pin: true,
-        start: "top 10",
+        start: "top top",
         end: "+=650",
         scrub: true,
         toggleActions: "play reverse play reverse",
@@ -668,7 +668,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".heading4-div",
         pin: true,
-        start: "top center -10",
+        start: "top 25%",
         end: "+=1970",
         scrub: true,
         // markers: true
@@ -703,7 +703,7 @@ ScrollTrigger.matchMedia({
         } else {
           $(this).css({ opacity: 0 });
         }
-        console.log(st, height ,offset)
+        // console.log(st, height ,offset)
 
       });
     });
@@ -712,7 +712,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt10",
         pin: true,
-        start: "top 10",
+        start: "top top",
         end: "+=650",
         scrub: true,
         toggleActions: "play reverse play reverse",
@@ -722,7 +722,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt11",
         pin: true,
-        start: "top 10",
+        start: "top top",
         end: "+=650",
         scrub: true,
         toggleActions: "play reverse play reverse",
@@ -733,7 +733,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".heading5-div",
         pin: true,
-        start: "top center -10",
+        start: "top 25%",
         end: "+=1320",
         scrub: true,
         // markers: true

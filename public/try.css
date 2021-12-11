@@ -1,0 +1,236 @@
+body {
+    background-color: #ffffff;
+    width: fit-content;
+}
+/* .navbar-brand {
+    color: white !important;
+}
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0.5rem;
+    color: #D4D4D8 !important;
+    font-weight: 600;
+}*/
+/* .nav-link:hover{
+    color: #5271ff !important;
+}
+.active a{
+    color: #5271ff !important; 
+} */
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+.main-div, .intro {
+    background-color: #78D970;
+    /* background-image: linear-gradient(to right, #78d970, #7ade7a, #7be385, #7ee88f, #80ed99); */
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* @media (min-width:320px) {
+    h1 {
+        /* font-size: 56px; 
+        text-align: left;
+    }
+    /* .empty-div {
+        display: none;
+    }  */
+    .intro {
+        padding: 0 3rem;
+    }
+    .heading {
+        padding: 0 1rem;
+    }
+    .tagline-div {
+        height: 90vh;
+    }
+    .tagline-img {
+        padding-top: 0;
+    } 
+    /* ok 
+} */
+@media (max-width:1024px) {
+    h1, h2, h3, h4, h5, p {
+        /* font-size: 56px; */
+        text-align: left;
+    }
+    .intro {
+        padding: 0 3rem;
+    }
+    .heading {
+        padding: 0 1rem;
+    }
+    .tagline-div {
+        height: 90vh;
+    }
+    .tagline-img {
+        padding-top: 0;
+    }
+    .eight-div, .email-box {
+        padding: 5rem;
+    }  
+    .email-div {
+        padding: 1rem;
+        margin: 1rem 0 0;
+    } 
+    .empty-div {
+        display: none;
+    }
+    /* .hasd {
+        display: block;
+        padding: 0 2.9375rem;
+    }
+    .hasd h5 {
+        font-size: 1.5rem;
+    }
+    .none-display {
+        display: none;
+    }
+    .txt9 {
+        align-items: center;
+    } */
+}
+
+@media (min-width:1024px) {
+    .intro, .email-div, .second-div, .third-div, .fourth-div, .fifth-div, .sixth-div, .seventh-div, .ninth-div, footer {
+        padding: 0 7rem 0
+    }
+    .eight-div, .email-box {
+        padding: 10rem;
+    }
+    .main-div {
+        padding: 2rem 7rem 0;
+    }
+    .email-div {
+        margin: 3rem 7rem
+    }
+    .explain-txt1, .explain-txt2 {
+       text-align: center;
+    }
+    /* .hasd {
+        display: none;
+    }
+    .block-display {
+        display: none;
+    } */
+}
+.intro h1 {
+    font-size: 4.22rem;
+}
+.intro h5 {
+    font-size: 1.5rem;
+    padding: 1rem 0 0.5rem;
+}
+
+h1 {
+    color: black;
+    font-family: 'Red Hat Display', sans-serif;
+    /* font-size: 4.22rem; */
+    font-weight: 800;
+    margin: 0 0 1rem;
+}
+.heading h2 {
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+.heading h5 {
+    font-size: 1.5rem;
+}
+h3 {
+    color: black;
+    font-family: 'Red Hat Display', sans-serif;
+    /* font-size: 2rem; */
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+h5 {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    /* font-size: 1.5rem; */
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.third-div, .fifth-div{
+    background-color: #F7F7F7;
+    padding-bottom: 5rem;
+}
+
+.third-div, .fourth-div, .fifth-div {
+    padding-top: 7rem  
+}
+.second-div {
+    position: relative;
+    top: -2rem;
+}
+.sixth-div {
+    padding-top: 5rem;
+}
+
+.hello {
+    padding: 2rem 0.25rem;
+}
+
+hr {
+    background-color: #D4D4D8;
+    opacity: 0.4;
+    margin: 0;
+}
+
+.hello {
+    width: 32rem;
+}
+
+.second-div h3 {
+    padding-bottom: 0.5rem;
+}
+.sixth-div h3{
+    color: white;
+}
+
+.box:hover {
+    transform: scale(1.01) !important;
+    transition-duration: 0.2s;
+}
+
+.email-div {
+    background-color: #2E2E33;
+    padding: 2rem 0;
+    margin: 1rem 0 0;
+}
+.email-div .row {
+    padding: 0 5rem;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.footer-logo {
+    width: 3.5rem;
+}
+footer {
+    padding-bottom: 2rem;
+}
+.fab {
+    color: #3CB8B4;
+    display: inline;
+    margin-right: 1rem;
+}
+.fab:hover {
+    color: #4cc7c3
+}
+
+.color3, .color4 {
+    background-image: linear-gradient(to right bottom, #5c7aea, #00a1fe, #00bce3, #00cfaa, #78d970);
+}
+
