@@ -87,22 +87,6 @@ a:hover {
         margin-top: 2rem;
     }
 }
-/* @media (min-width:762px){
-
-    h1, h2, h3, h4, h5, p {
-        text-align: left;
-    }
-    .intro {
-        padding: 0 3rem;
-    }
-    .heading {
-        padding: 0 1rem;
-    }
-    /* .empty-div {
-        display: none;
-    } 
-} */
-
 
 
 @media (min-width:1024px) {
@@ -226,12 +210,12 @@ footer {
     padding-bottom: 2rem;
 }
 .fab {
-    color: #3CB8B4;
+    color: #1e5bfa;
     display: inline;
     margin-right: 1rem;
 }
 .fab:hover {
-    color: #4cc7c3
+    color: #5682f2
 }
 
 .color3, .color4 {
