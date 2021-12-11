@@ -778,7 +778,7 @@ form.addEventListener("submit", (e) => {
   const name = document.querySelector("#name").value;
   const email = document.querySelector("#email").value;
 
-  fetch(`${url}subscribe`, {
+  fetch(`${url}`, {
     method: "post",
     headers: {
       Accept: "application/json",
