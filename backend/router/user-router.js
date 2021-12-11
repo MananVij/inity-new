@@ -4,7 +4,7 @@ const router = new express.Router();
 
 const User = require("../models/user-model.js");
 
-router.post("/subscribe", async (req, res) => {
+router.post("/", async (req, res) => {
   const user = new User(req.body);
   await user
     .save()
