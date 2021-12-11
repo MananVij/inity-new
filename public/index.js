@@ -447,10 +447,10 @@ ScrollTrigger.matchMedia({
         // offset = offset + height / 1;
         if (st >= 2.590561 * height) {
           $(this).css({ opacity: 0 });
-          document.querySelector('.second-div h5').innerHTML = "Inity has a wide range of Avatars to choose from, and all the suggestions will be tailored accordingly. "
+          document.querySelector('.desktop-view').innerHTML = "Inity has a wide range of Avatars to choose from, and all the suggestions will be tailored accordingly."
         } else {
           $(this).css({ opacity: 1 });
-          document.querySelector('.second-div h5').innerHTML = "You are different and so are your needs. We understand!"
+          document.querySelector('.desktop-view').innerHTML = "You are different and so are your needs. We understand!"
         }
       });
     });
@@ -614,6 +614,7 @@ ScrollTrigger.matchMedia({
         var height = $(this).outerHeight();
         if (st >= 11.111 * height || st <= 0.998442 * offset) {
           $(this).css({ opacity: 0 });
+          document.querySelector('.h5-1').innerHTML = "Education?"
         } else {
           $(this).css({ opacity: 1 });
           document.querySelector('.h5-1').innerHTML = "Marriage?"
@@ -628,6 +629,7 @@ ScrollTrigger.matchMedia({
         var height = $(this).outerHeight();
         if (st >= 0.998 * offset) {
           $(this).css({ opacity: 1 });
+          document.querySelector('.h5-1').innerHTML = "House?"
         } else {
           $(this).css({ opacity: 0 });
         }
@@ -704,7 +706,6 @@ ScrollTrigger.matchMedia({
           $(this).css({ opacity: 0 });
         }
         // console.log(st, height ,offset)
-
       });
     });
 

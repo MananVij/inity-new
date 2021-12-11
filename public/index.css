@@ -80,6 +80,9 @@ a:hover {
     .empty-div {
         display: none;
     }
+    .desktop-view {
+        display: none;
+    }
 }
 /* @media (min-width:762px){
 
@@ -114,6 +117,9 @@ a:hover {
     }
     .explain-txt1, .explain-txt2 {
        text-align: center;
+    }
+    .mobile-view {
+        display: none;
     }
 }
 .intro h1 {
@@ -187,9 +193,6 @@ hr {
 
 .second-div h3 {
     padding-bottom: 0.5rem;
-}
-.sixth-div h3{
-    color: white;
 }
 
 .box:hover {
