@@ -161,7 +161,8 @@ ScrollTrigger.matchMedia({
         // offset = offset + height / 1;
         if (st >= 2.590561 * height) {
           $(this).css({ opacity: 0 });
-          document.querySelector('.desktop-view').innerHTML = "Inity has a wide range of Avatars to choose from, and all the suggestions will be tailored accordingly."
+          document.querySelector('.desktop-view').innerHTML = "We will customize the suggestions according to You."
+          // document.querySelector('.desktop-view').innerHTML = "Inity has a wide range of Avatars to choose from, and all the suggestions will be tailored accordingly."
         } else {
           $(this).css({ opacity: 1 });
           document.querySelector('.desktop-view').innerHTML = "You are different and so are your needs. We understand!"
@@ -175,7 +176,7 @@ ScrollTrigger.matchMedia({
         const offset = $(this).offset().top;
         var height = $(this).outerHeight();
         // offset = offset + height / 1;
-        if ( st <= 0.988 * offset) {
+        if ( st <= 2.59056 * height) {
           $(this).css({ opacity: 0 });
         } else {
           $(this).css({ opacity: 1 });
@@ -187,7 +188,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt1",
         pin: true,
-        start: "top top",
+        start: "top 5%",
         end: "+=650",
         scrub: 1,
       },
@@ -196,7 +197,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".txt2",
         pin: true,
-        start: "top top",
+        start: "top 5%",
         end: "+=650",
         scrub: true,
         toggleActions: "play reverse play reverse",
@@ -224,12 +225,14 @@ ScrollTrigger.matchMedia({
         var height = $(this).outerHeight();
         if (st >= 5.828 * height) {
           $(this).css({ opacity: 0 });
-          document.querySelector('.third-div h2').innerHTML = "Link your Investment Portfolios and Subscriptions."
-          document.querySelector('.third-div h5').innerHTML = ""
+          document.querySelector('.third-div h2').innerHTML = "Link your Investment Portfolios."
+          document.querySelector('.heading3-div h5').innerHTML = "Keep a track of all your investments in one place."
+          // document.querySelector('.third-div h5').innerHTML = ""
         } else {
           $(this).css({ opacity: 1 });
-          document.querySelector('.third-div h2').innerHTML = "Link your Cards and Banks."
-          document.querySelector('.third-div h5').innerHTML = ""
+          document.querySelector('.third-div h2').innerHTML = "Link your Cards."
+          document.querySelector('.heading3-div h5').innerHTML = "Manage all your expenses and income in one place."
+          // document.querySelector('.third-div h5').innerHTML = ""
         }
       });
     });
@@ -241,10 +244,12 @@ ScrollTrigger.matchMedia({
         var height = $(this).outerHeight();
         if (st >= 6.82039 * height || st <= 0.997 * offset) {
           $(this).css({ opacity: 0 });
-          document.querySelector('.third-div h5').innerHTML = "We keep your information secure away from hackers."
+          // document.querySelector('.third-div h5').innerHTML = "Manage all your expenses and income in one place."
+          // document.querySelector('.third-div h5').innerHTML = "We keep your information secure away from hackers."
         } else {
           $(this).css({ opacity: 1 });
-          document.querySelector('.third-div h5').innerHTML = ""
+          document.querySelector('.heading3-div h5').innerHTML = "Keep a track of all your investments in one place."
+          // document.querySelector('.third-div h5').innerHTML = ""
         }
       });
     });
@@ -256,6 +261,9 @@ ScrollTrigger.matchMedia({
         var height = $(this).outerHeight();
         if (st >= 0.997 * offset) {
           $(this).css({ opacity: 1 });
+          // new edit
+          document.querySelector('.third-div h2').innerHTML = "Safety always comes first."
+          document.querySelector('.third-div h5').innerHTML = "Your information is safe and is away from bad guys!"
         } else {
           $(this).css({ opacity: 0 });
         }
