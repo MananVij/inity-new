@@ -470,7 +470,7 @@ ScrollTrigger.matchMedia({
 
 
 
-var countDownDate = new Date("Dec 27, 2021 15:37:25").getTime();
+var countDownDate = new Date("Dec 30, 2021 23:59:59").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
