@@ -495,39 +495,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-
-const form = document.querySelector(".form");
-const url = 'https://inity-backend.herokuapp.com/';
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const name = document.querySelector("#name").value;
-  const email = document.querySelector("#email").value;
-
-  fetch(`${url}register`, {
-    method: "post",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-
-    body: JSON.stringify({
-      name: name,
-      email: email,
-    }),
-  })
-    .then((response) => {
-        console.log(response)
-      console.log(`thanks ${name}`);
-      alert(`Thanks ${name}, you will receive details shortly!`)
-    })
-    .catch((e) => {
-      console.log(e);
-      alert(e+' error occured')
-    });
-});
-
-
 // Popup Scroll Disable
 const subs_cont_elm = document.getElementById("subs-cont");
 const subs_btn = document.querySelector(".subs-btn");

@@ -64,7 +64,7 @@ body {
   overflow: hidden;
 }
 .subscribe .img img {
-  width: 90%;
+  width: 112%;
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
   animation: animate_subs_img 1s alternate infinite linear;
 }
