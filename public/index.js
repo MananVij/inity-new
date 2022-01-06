@@ -496,7 +496,7 @@ var x = setInterval(function() {
 }, 1000);
 
 
-const form = document.querySelector("form");
+const form = document.querySelector(".form");
 const url = 'https://inity-backend.herokuapp.com/';
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -526,3 +526,32 @@ form.addEventListener("submit", (e) => {
       alert(e+' error occured')
     });
 });
+
+
+// Popup Scroll Disable
+const subs_cont_elm = document.getElementById("subs-cont");
+const subs_btn = document.querySelector(".subs-btn");
+const btn_sub_close = document.getElementById("subs-close");
+
+btn_sub_close.addEventListener("click", () => {
+  subs_cont_elm.classList.remove("show");
+  enableScroll()
+});
+subs_btn.addEventListener("click", () => {
+  subs_cont_elm.classList.remove("show");
+  enableScroll()
+});
+const myTimeout = setTimeout(myGreeting, 10000);
+
+function myGreeting() {
+    subs_cont_elm.classList.add("show");
+    disableScroll()
+}
+
+function disableScroll() {
+  document.body.classList.add("stop-scrolling");
+  }
+  
+  function enableScroll() {
+  document.body.classList.remove("stop-scrolling");
+}
