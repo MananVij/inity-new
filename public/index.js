@@ -541,7 +541,7 @@ subs_btn.addEventListener("click", () => {
   subs_cont_elm.classList.remove("show");
   enableScroll()
 });
-const myTimeout = setTimeout(myGreeting, 10000);
+const myTimeout = setTimeout(myGreeting, 1000);
 
 function myGreeting() {
     subs_cont_elm.classList.add("show");
