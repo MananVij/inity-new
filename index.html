@@ -107,9 +107,9 @@
             Click on the button below to get a free premium membership and a beta update.
           </p> -->
           
-          <form action="https://inity.netlify.app/#email-div">
+          <form id="agreed-form" action="#email-div">
             <span class="subs-btn">
-                <button  >Yeah Sure!</button>
+                <button id="agreed-button" type="submit" >Yeah Sure!</button>
             </span>
           </form>
         
@@ -945,7 +945,18 @@
   <script>
 
 const form = document.querySelector(".form");
+const agreedButton = document.querySelector("#agreed-btn")
 const url = 'https://inity-backend.herokuapp.com/';
+agreedButton.addEventListener("click", (e) => {
+  console.log('agreedForm')
+    fetch(`${url}agreed`, {
+      method: "get",
+      headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    }
+    })
+})
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
