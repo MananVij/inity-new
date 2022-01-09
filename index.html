@@ -107,7 +107,7 @@
             Click on the button below to get a free premium membership and a beta update.
           </p> -->
           
-          <form id="agreed-form" action="#email-div">
+          <form id="agreed-form">
             <span class="subs-btn">
                 <button id="agreed-btn" type="submit" >Yeah Sure!</button>
             </span>
@@ -956,6 +956,7 @@ agreedButton.addEventListener("click", (e) => {
       "Content-Type": "application/json",
     }
     })
+    window.location.href = "#email-div"
 })
 form.addEventListener("submit", (e) => {
   e.preventDefault();
