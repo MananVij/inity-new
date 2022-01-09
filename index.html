@@ -948,9 +948,8 @@ const form = document.querySelector(".form");
 const agreedForm = document.querySelector("#agreed-btn")
 const agreedButton = document.querySelector("#agreed-form")
 const url = 'https://inity-backend.herokuapp.com/';
-agreedForm.addEventListener("submit", (e) => {
+agreedButton.addEventListener("click", (e) => {
   e.preventDefault()
-  console.log(agreedForm)
     fetch(`${url}agreed`, {
       method: "get",
       headers: {
