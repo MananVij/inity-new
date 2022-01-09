@@ -107,7 +107,7 @@
             Click on the button below to get a free premium membership and a beta update.
           </p> -->
           
-          <form id="agreed-form">
+          <form id="agreed-form" action="#email-div">
             <span class="subs-btn">
                 <button id="agreed-btn" type="submit" >Yeah Sure!</button>
             </span>
@@ -945,10 +945,12 @@
   <script>
 
 const form = document.querySelector(".form");
-const agreedButton = document.querySelector("#agreed-btn")
+const agreedForm = document.querySelector("#agreed-btn")
+const agreedButton = document.querySelector("#agreed-form")
 const url = 'https://inity-backend.herokuapp.com/';
-agreedButton.addEventListener("click", (e) => {
-  console.log('agreedForm')
+agreedForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  console.log(agreedForm)
     fetch(`${url}agreed`, {
       method: "get",
       headers: {
